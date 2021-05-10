@@ -9,5 +9,9 @@ def hello_world():
 def checkapi():
     return {'mensaje':"API LISTA", 'success': True}
 
+@app.route('/api/saludo')
+def checkapisaludo():
+    return {'mensaje':"Api, Hola mundo", 'success': True}
+
 if __name__ == '__main__':
     app.run(debug=True)
